@@ -6,7 +6,7 @@ var ball = {
     position: {x: width/2, y: 0},
     velocity: {x: 10, y: 0},
     mass: 0.1, //kg
-    radius: 110, // 1px = 1cm
+    radius: 16, // 1px = 1cm
     restitution: -0.7
 };
 
