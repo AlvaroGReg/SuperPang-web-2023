@@ -11,13 +11,17 @@ var frameDelay = frameRate * 1000; // ms
 var map = []; //CONTAINS KEY INPUTS IN USE
 
 setInterval(loop, frameDelay);
+//init player animation
+Player.animateSprite();
 //start();
 
+// ADD 1 BUBBLE
+Bubbles.addBubble(0, 0, 220, 3, 1, 2);
 // LOOP PLAYER
 function loop() {
     Player.move();
     Shooting.launchAttack();
-    Bubbles.moveBubble("bubble1");
+    Bubbles.moveImage();
 }
 
 
